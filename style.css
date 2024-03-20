@@ -1,0 +1,214 @@
+:root {
+    --raleway-font: "Raleway", sans-serif;
+    --secondary-font: "Open Sans", sans-serif;
+    --black-color: #363636;
+    --white-color: #fff;
+    --active-color: #605e5e;
+    --green-color: #447f74;
+    --overlay-color: #3636364d;
+ }
+body {
+    margin: 0;
+    padding: 0;
+    font-family:var(--raleway-font);
+    color: var(--black-color);
+ }
+ .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .active-color {
+    color: var(--active-color);
+ }
+ header.flex-center {
+    justify-content: space-between;
+    width: 100%;
+    height: 79px;
+    padding: 0 80px;
+    box-sizing: border-box;
+    position: fixed;
+    background-color: var(--white-color);
+    z-index: 1;
+ }
+ header a {
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: var(--black-color);
+    transition: 0.5s ease;
+ }
+ header a.brand {
+    font-size: 16px;
+    font-weight: 400;
+ }
+ header a:hover {
+    color: var(--green-color);
+ }
+ header nav ul {
+    gap: 20px;
+    list-style: none;;
+ }
+ main {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 0 80px;
+    box-sizing: border-box;
+ }
+ main section {
+    width: 100%;
+ }
+ main section.banner {
+    position: relative;
+    height: 821px;
+    background-image: url("https://static.wixstatic.com/media/9a25f2_d1f2ab46fec94c389da36281a1253780~mv2_d_4200_2800_s_4_2.jpg/v1/fill/w_980,h_821,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/9a25f2_d1f2ab46fec94c389da36281a1253780~mv2_d_4200_2800_s_4_2.jpg");
+    background-repeat: no repeat;
+    background-size: cover;
+}
+main section.banner div.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: var(--overlay-color);
+} 
+main section.banner div.overlay article h1 {
+    color: var(--white-color);
+    font-size: 50px;
+    letter-spacing: 25px;
+    text-align: center;
+    font-weight: 400;
+    line-height: normal;
+}
+main section.banner div.overlay article h2 {
+    color: var(--white-color);
+    font-family: var(--secondary-font);
+    font-size: 20px;
+    letter-spacing: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: center;
+} 
+div.vl {
+    border-left: 1px solid var(--active-color);
+    height: 70px;
+    position: absolute;
+    left: 50%;
+}
+h2.italics {
+    font-family: var(--secondary-font);
+    color: var(--active-color);
+    font-size: 18px;
+    font-style: italic;
+    font-weight: 400;
+    letter-spacing: 1.8px;
+    text-align: center;
+}
+p.paragraph {
+    line-height: 32px;
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0 29%;
+    text-align: center;
+}
+section.gallery {
+    display: grid;
+    width: 100%;
+    padding: 0 40px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 35vw);
+    justify-content: space-between;
+    box-sizing: border-box;
+ }
+ section.gallery figure img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s ease;
+    box-sizing: border-box;
+}
+section.gallery figure:hover{
+    opacity: 0.5;
+}
+p.lastpart {
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    font-weight: 400;
+    color: var(--black-color);
+}
+form.form {
+  margin: 0 0 30% 30%;
+}
+form.form input {
+   padding-right: 200px;
+   padding-left: 10px;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   transition: 0.5s;
+   outline: none;
+   border: 3px solid var(--black-color);
+}
+form.form input:hover {
+    border-color: red;
+}
+form.form label {
+    font-style: italic;
+    font-family: var(--secondary-font);
+    font-size: 16px;
+}
+form.form span {
+    width: 100%;
+    font-size: 18px;
+    padding-left: 10px;
+}
+form.form span a {
+    color: var(--black-color);
+    transition: 0.5s ease;
+    text-decoration: none;
+}
+form.form span a:hover{
+    color:var(--green-color);
+}
+section.address {
+    margin-top: -25%;
+}
+section.address ul {
+    text-align: center;
+    font-size: 20px;
+    line-height: 32px;
+    text-align: center;
+    font-weight: 400;
+    color: var(--black-color);
+}
+section.address ul li {
+    list-style: none;
+}
+section.address ul li a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+section.end ul {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 400;
+    column-gap: 20px;
+}
+section.end ul li {
+    list-style: none;
+}
+section.end ul li a {
+    text-decoration: none;
+    color: var(--black-color);
+}
+footer p {
+    text-align: center;
+    font-style: italic;
+    font-size: 14px;
+    font-weight: 400;
+}
